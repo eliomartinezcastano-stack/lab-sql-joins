@@ -32,7 +32,7 @@ JOIN staff AS st
 JOIN payment as p
 	ON st.staff_id = p.staff_id
 GROUP BY s.store_id
-ORDER BY total_revenue DES;
+ORDER BY total_revenue DESC;
 
 SELECT
 	c.name AS category,
